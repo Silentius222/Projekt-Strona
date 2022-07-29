@@ -9,15 +9,14 @@ hr {
 }
 
 hr.divider-light-dark {
-    max-width: $baseline * 3.3;
-    // border-color: $color-primary;
-    border-color: #a5e200;
+    // max-width: $baseline * 3.3;
+    max-width: 150px;
+    border-color: $color-primary;
     border-width: 3px;
 }
 
 hr.divider-light {
-    // border-color: $color-bg-main;
-    border-color: #a5e200;
+    border-color: $color-bg-main;
     max-width: $baseline * 3.3;
     border-width: 3px;
 }

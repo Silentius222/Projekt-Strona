@@ -10,7 +10,6 @@
     #about {
         margin-top: $baseline * 4;
 		padding: ($baseline * 4) $padding-none;
-        width: 150px;
 
         .about-box {
             margin: ($baseline * 3) auto $margin-none;
@@ -21,13 +20,17 @@
 
             .icon-about {
                 color: $color-text-primary;
+                // width: $base-font-size * 4.5;
+                // height: $base-font-size * 4.5;
                 width: 96px;
                 height: 96px;
                 border-radius: 100%;
                 line-height: $base-font-size * 4.5;
-                // background-color: $color-primary;
-                background-color: #a5e200;
+                background-color: $color-primary;
                 margin: $margin-none auto $baseline;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
 	}
@@ -72,8 +75,7 @@
                 }
 
                 .text-primary {
-                    // color: $color-primary;
-                    color: #a5e200;
+                    color: $color-primary;
                 }
             }
         }
@@ -90,7 +92,6 @@
     #counters-progress { 
         background: url(../images/counters/counters_progres.jpg) 50% 0 fixed;
         color: $color-text-primary;
-        width: 150px;
 
         hr {
             margin-bottom: $baseline;
@@ -105,7 +106,6 @@
 	#portfolio {
 		padding: $padding-none;
         text-transform: $text-transform-base;
-
 
 		.col-lg-3 {
             padding-left: $padding-none;
@@ -142,9 +142,9 @@
                 height:100%;
                 opacity: 0;
                 background: $color-portfolio-hover;
-                -webkit-transition: all .35s;
-                -moz-transition: all .35s;
-                transition: all .35s;
+                // -webkit-transition: all .35s;
+                // -moz-transition: all .35s;
+                transition: all 1s;
 
                 .portfolio-box-caption-content {
                     position: absolute;
@@ -177,15 +177,17 @@
     padding: ($baseline * 4) $padding-none $baseline;
 
         .icon-services {
-            // color: $color-primary;
-            color: #a5e200;
+            color: $color-primary;
             width: $base-font-size * 4.5;
             height: $base-font-size * 4.5;
             border-radius: 100%;
             line-height: $base-font-size * 4.5;
-            border: 2px solid ;
-            border-color: #a5e200;
-            transition-duration: 500ms;
+            border: 2px solid $color-primary;
+        }
+
+        .icon-services:hover {
+            transform: rotate(-45deg);
+            transition: 0.5s;
         }
 
 
@@ -197,9 +199,11 @@
             }
 
             .divider-light-dark {
-                width: $baseline * 2;
+                // width: $baseline * 2;
+                width: 25px;
                 margin-left: $padding-none;
                 margin-bottom: 20px;
+                opacity: 50%;
             }
         }
     }

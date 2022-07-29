@@ -3,8 +3,7 @@
 
 .btn-primary {
 	color: $color-text-primary;
-	// background-color: $color-link;
-	background-color: #a5e200;
+	background-color: $color-link;
 	border-color: $color-link;
 	text-transform: $text-transform-base;
 	padding: 10px 12px;
@@ -12,7 +11,7 @@
 }
 
 .btn-primary:hover {
-	color: #88ba00;
+	color: $color-text-primary-darker;
 	background-color: $color-link-hover;
 	border-color: $color-link-hover;
 }
